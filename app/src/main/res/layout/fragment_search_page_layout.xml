@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_height="match_parent"
+   android:layout_width="match_parent"
+   android:padding="15dp"
+   tools:context=".MainActivity">
+
+   <FrameLayout
+      android:id="@+id/flSearchBarLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.AppCompatEditText
+         android:layout_width="match_parent"
+         android:layout_height="46dp"
+         android:background="@drawable/bg_search_bar_edit_text"
+         android:hint="Search Places"
+         android:drawableLeft="@drawable/ic_baseline_search_24"
+         android:drawablePadding="15dp"
+         android:padding="10dp"
+         android:textColorHint="#212121"/>
+
+   </FrameLayout>
+
+   <TextView
+      android:id="@+id/tvNoResultsTxt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="No Results"
+      android:layout_marginTop="15dp"
+      android:textSize="16sp"
+      android:textColor="#212121"
+      android:gravity="center"
+      app:layout_constraintTop_toBottomOf="@id/flSearchBarLayout"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

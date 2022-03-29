@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_margin="15dp"
+   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.google.android.material.card.MaterialCardView
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+
+      app:layout_constraintTop_toTopOf="parent"
+      app:cardCornerRadius="20dp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <ImageView
+            android:id="@+id/cvCardImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/delhi_image"
+            android:scaleType="fitXY"
+            android:contentDescription="Card Image"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
+
+         <TextView
+            android:id="@+id/tvImageBlackOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_view_card_image_overlay"/>
+
+         <TextView
+            android:id="@+id/cvCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Delhi, India"
+            android:textColor="@color/PrimaryWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toTopOf="@id/cvCardSubtitle"/>
+
+         <TextView
+            android:id="@+id/cvCardSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Place I love to visit Again and Again"
+            android:textColor="@color/PrimaryWhite"
+            android:textSize="14sp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+         <ImageView
+            android:id="@+id/cardAddToFavoritesButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="Add To Favorites Button"
+            android:clickable="true"
+            android:focusable="true"/>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+   </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

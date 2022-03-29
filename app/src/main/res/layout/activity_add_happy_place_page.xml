@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".AddHappyPlacePage">
+
+   <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/appMainToolBar"
+      android:theme="@style/MyTheme"
+      android:layout_width="match_parent"
+      android:layout_height="?android:actionBarSize"
+      app:titleTextColor="@color/AccentLight"
+      android:background="@color/PrimaryWhite"
+      app:title="Add Happy Place"
+      app:menu="@menu/top_action_menu"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

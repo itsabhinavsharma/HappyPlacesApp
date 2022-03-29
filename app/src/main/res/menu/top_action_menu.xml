@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item
+      android:id="@+id/app_bar_camera_btn"
+      android:icon="@drawable/ic_baseline_photo_camera_32"
+      android:title="Camera"
+      android:enabled="true"
+      app:showAsAction="always"/>
+</menu>
